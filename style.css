@@ -1,0 +1,11 @@
+header {
+    background-image: url("Assets/image-header.png");
+}
+
+#sponsors {
+    background-image: url("Assets/banniere-logo.png");
+}
+
+#empty_section {
+    background-image: url("Assets/section-img.png");
+}
