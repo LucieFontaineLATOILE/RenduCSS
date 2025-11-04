@@ -2,15 +2,24 @@ body {
     color: white;
     background-color: black;
     text-align: center;
+    padding: 0px;
 }
 
-a {
-    color: white;
+a.fancy_button {
+    color: black;
     text-decoration: none;
+    padding: 8px 24px;
+    background-color: white;
+    border-radius: 8px;
 }
 
 header {
     background-image: url("Assets/image-header.png");
+
+    ul,
+    li {
+        display: inline-block;
+    }
 }
 
 #sponsors {
