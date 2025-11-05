@@ -16,11 +16,16 @@
     border-radius: 8px;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .fancy_black_button {
     background-color: black;
     color: white
+}
+
+.email_link {
+    color: white;
 }
 
 body {
@@ -86,22 +91,194 @@ header {
     }
 }
 
-#empty_section {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
+#accueil {
+    padding: 128px 0px;
+
+    h2 {
+        font-size: 48px;
+        text-align: left;
+        font-weight: 250;
+        line-height: 90%;
+        margin-bottom: 24px;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: left;
+        font-weight: 200;
+    }
+}
+
+#empty_section img {
+    width: 100%;
+}
+
+#line_up {
+    margin: 64px 0px;
+    text-transform: uppercase;
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: left;
+
+        li:first-child {
+            border-top: 1px dashed rgba(255, 255, 255, 0.5);
+        }
+
+        li {
+            text-align: left;
+            font-size: 28px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+            padding: 16px 0px;
+            font-weight: 200;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 64px;
+    }
 }
 
 #sponsors {
     background-image: url("Assets/banniere-logo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
 
-    text-align: center;
+    padding: 120px 0;
+
+    .container {
+        width: 100vw;
+    }
+
+    img {
+        margin: 0px 16px;
+    }
+}
+
+#contact {
+    padding: 64px 0;
+
+    h2 {
+        font-size: 36px;
+        font-weight: 350;
+        line-height: 90%;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 20px;
+        text-align: left;
+        font-weight: 350;
+        margin-bottom: 24px;
+    }
+
+    form {
+        div {
+            text-transform: capitalize;
+            text-align: left;
+            margin-bottom: 16px;
+
+            label {
+                display: block;
+                font-size: 12px;
+            }
+
+            input {
+                padding: 8px;
+                font-size: 18px;
+                color: white;
+                background-color: rgb(51, 51, 51);
+                border: none;
+                width: 100%;
+            }
+
+
+            textarea {
+                padding: 8px;
+                height: 300px;
+                font-size: 18px;
+                color: white;
+                background-color: rgb(51, 51, 51);
+                border: none;
+                width: 100%;
+                resize: none;
+            }
+
+            textarea::placeholder,
+            input::placeholder {
+                text-transform: capitalize;
+            }
+        }
+
+    }
+}
+
+#email_and_newletter {
+    padding: 96px;
 
     div {
-        vertical-align: middle;
-        margin: 0px auto;
+        font-size: 24px;
+        display: inline-block;
+    }
+
+    form {
+        float: right;
+
+        label {
+            display: block;
+            font-size: 24px;
+        }
+
+        div {
+            background-color: white;
+            color: black;
+            border: 1px solid white;
+            border-radius: 8px;
+
+            input {
+                border: none;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                font-size: 18px;
+                padding: 16px;
+                background-color: transparent;
+                text-transform: capitalize;
+                width: 350px;
+            }
+
+            button {
+                border: none;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                font-size: 18px;
+                padding: 16px;
+                color: white;
+                background-color: black;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+#legals {
+    background-color: white;
+    color: black;
+    padding: 16px 64px;
+
+    p:first-child {
+        display: inline-block;
+    }
+
+    p:last-child {
+        float: right;
     }
 }

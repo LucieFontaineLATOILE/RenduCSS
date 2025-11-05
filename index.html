@@ -33,7 +33,6 @@
         </nav>
 
         <section id="hero">
-            <!-- <div class="container"> -->
             <div>
                 <h1>
                     <span>urban night</span>
@@ -56,7 +55,7 @@
 
     <main>
         <section id="accueil">
-            <div>
+            <div class="container">
                 <h2>
                     Plongez au cœur du rythme urbain avec RAPture, le festival de rap qui célèbre la puissance des mots,
                     des beats et des cultures qui les inspirent.
@@ -79,47 +78,49 @@
         </section>
 
         <section id="line_up">
-            <h2>line up</h2>
+            <div class="container">
+                <h2>line up</h2>
 
-            <ul>
-                <li>
-                    <strong>04 mai</strong> - omah lay
-                </li>
+                <ul>
+                    <li>
+                        <strong>04 mai</strong> - omah lay
+                    </li>
 
-                <li>
-                    <strong>04 mai</strong> - wizkid
-                </li>
+                    <li>
+                        <strong>04 mai</strong> - wizkid
+                    </li>
 
-                <li>
-                    <strong>04 mai</strong> - lil baby
-                </li>
+                    <li>
+                        <strong>04 mai</strong> - lil baby
+                    </li>
 
-                <li>
-                    <strong>04 mai</strong> - burna boy
-                </li>
+                    <li>
+                        <strong>04 mai</strong> - burna boy
+                    </li>
 
-                <li>
-                    <strong>05 mai</strong> - kpoint
-                </li>
+                    <li>
+                        <strong>05 mai</strong> - kpoint
+                    </li>
 
-                <li>
-                    <strong>05 mai</strong> - a.c
-                </li>
+                    <li>
+                        <strong>05 mai</strong> - a.c
+                    </li>
 
-                <li>
-                    <strong>05 mai</strong> - kekra
-                </li>
+                    <li>
+                        <strong>05 mai</strong> - kekra
+                    </li>
 
-                <li>
-                    <strong>05 mai</strong> - theodora
-                </li>
-            </ul>
+                    <li>
+                        <strong>05 mai</strong> - theodora
+                    </li>
+                </ul>
 
-            <a href="#contact" class="fancy_button">billeterie</a>
+                <a href="#contact" class="fancy_button">billeterie</a>
+            </div>
         </section>
 
         <section id="sponsors">
-            <div>
+            <div class="container">
                 <img src="Assets/spotify.png" alt="spotify">
                 <img src="Assets/applemusic.png" alt="apple music">
                 <img src="Assets/uber.png" alt="uber">
@@ -129,62 +130,59 @@
         </section>
 
         <section id="contact">
-            <h2>contactez nous</h2>
-            <p>
-                Fill out the booking form below to ask any questions, or reach out to us directly at
-                <a href="mailto:help@ratureclouds.com">help@ratureclouds.com</a>
-                with any questions or concerns.
-            </p>
+            <div class="container">
+                <h2>contactez nous</h2>
+                <p>
+                    Fill out the booking form below to ask any questions, or reach out to us directly at
+                    <a href="mailto:help@ratureclouds.com" class="email_link">help@ratureclouds.com</a>
+                    with any questions or concerns.
+                </p>
 
-            <form>
-                <div id="form_full_name">
-                    <label>full name</label>
-                    <input type="text" value="full name">
-                </div>
+                <form>
+                    <div>
+                        <label>full name</label>
+                        <input type="text" placeholder="full name">
+                    </div>
 
-                <div id="form_email">
-                    <label>email</label>
-                    <input type="text" value="email">
-                </div>
+                    <div>
+                        <label>email</label>
+                        <input type="text" placeholder="email">
+                    </div>
 
-                <div id="form_phone">
-                    <label>phone</label>
-                    <input type="text" value="phone">
-                </div>
+                    <div>
+                        <label>phone</label>
+                        <input type="text" placeholder="phone">
+                    </div>
 
-                <div id="form_message">
-                    <label>message</label>
-                    <input type="text" value="message">
-                </div>
+                    <div>
+                        <label>message</label>
+                        <textarea name="Message" placeholder="Message"></textarea>
+                    </div>
 
-                <button id="form_button" class="fancy_button">contact</button>
-            </form>
+                    <a href="" class="fancy_button">contact</a>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <!-- left side of the footer -->
-        <div>
-            <p>Email</p>
-            <a href="mailto:help@ratureclouds.com">help@ratureclouds.com</a>
+        <div id="email_and_newletter">
+            <div>
+                <p>Email</p>
+                <a href="mailto:help@ratureclouds.com" class="email_link">help@ratureclouds.com</a>
+            </div>
+
+            <form action="">
+                <label>NewsLetter</label>
+                <div>
+                    <input type="text" value="ton email">
+                    <button>subscribe</button>
+                </div>
+            </form>
         </div>
 
-        <!-- right side of the footer -->
-        <!-- Newslatter form -->
-        <form action="">
-            <label>NewsLetter</label>
-            <input type="text" value="ton email">
-            <input type="submit" value="subscribe">
-        </form>
-
-        <!-- bottom of the footer -->
         <div id="legals">
-            <!-- white background -->
-
-            <!-- left side of copyright and ToS -->
             <p>Copyright © 2025 • Rapture - Music Festiva</p>
-
-            <!-- right side of copyright and ToS -->
             <p>Terms & Conditions for Event • Privacy Policy • Terms of Use</p>
         </div>
     </footer>
